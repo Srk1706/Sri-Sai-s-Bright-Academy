@@ -1,0 +1,171 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.glacier-effect {
+    background: rgba(255, 255, 255, 0.1);
+    /* Light see-through */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navbar-brand,
+.nav-link {
+    color: grey;
+}
+
+.navbar-brand:hover {
+    color: gray;
+}
+
+/* Navbar link hover effect */
+.navbar-nav .nav-item .nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #0d6efd;
+    /* Change to your desired color on hover */
+    transform: scale(1.1);
+    /* Slightly scale up the link */
+}
+
+
+
+.hero {
+    background-color: white;
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.course-card {
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Style for form inputs */
+input,
+textarea {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.about-card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) translateZ(10px);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: perspective(1000px) translateZ(20px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/*   Intoduction */
+.intro-card {
+    background: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.5s, box-shadow 0.3s ease-in-out;
+}
+
+
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.social-icon {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1) translateY(-5px);
+
+}
+
+/* Specific icon colors */
+
+.youtube:hover {
+    color: #FF0000;
+}
+
+.instagram:hover {
+    color: #E1306C;
+}
+
+.whatsapp:hover {
+    color: #1fde06;
+}
+
+.telegram:hover {
+    color: #0088cc;
+}
+
+#Introduction a {
+    text-decoration: none;
+
+}
